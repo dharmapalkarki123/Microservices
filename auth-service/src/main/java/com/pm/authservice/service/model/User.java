@@ -1,4 +1,4 @@
-package com.pm.authservice.model;
+package com.pm.authservice.service.model;
 
 import jakarta.persistence.*;
 
