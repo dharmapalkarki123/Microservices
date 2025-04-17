@@ -12,6 +12,7 @@ spring:
             - Path=/api/patients/**
           filters:
             - StripPrefix=1
+            - JwtValidation
 
         # Route for Swagger docs
         - id: api-docs-patient-route
