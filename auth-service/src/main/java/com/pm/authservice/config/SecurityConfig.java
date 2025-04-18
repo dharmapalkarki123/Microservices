@@ -14,10 +14,10 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
 
     private final UserService userService;
-    private final PasswordEncoder passwordEncoder;
-    public SecurityConfig(UserService userService, PasswordEncoder passwordEncoder) {
+
+    public SecurityConfig(UserService userService) {
         this.userService = userService;
-        this.passwordEncoder = passwordEncoder;
+
     }
 
     @Bean
