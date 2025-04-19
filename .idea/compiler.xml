@@ -11,9 +11,13 @@
         <module name="api-gateways" />
         <module name="patient-service" />
         <module name="auth-service" />
+        <module name="integration-test" />
         <module name="billing-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="integeration-test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
