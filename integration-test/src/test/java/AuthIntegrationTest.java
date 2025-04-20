@@ -18,9 +18,7 @@ public class AuthIntegrationTest {
     }
 @Test
 public void shouldReturnWithValidToken(){
-    //1.Arrange
-    //2.Act
-    //3.Assert
+
     String loginPayLoad = """
          {
          "email":"testuser@test.com",
@@ -45,6 +43,35 @@ public void shouldReturnWithValidToken(){
 
 
 }
+
+@Test
+    public void shouldReturnWithInvalidToken(){
+
+        String loginPayLoad = """
+         {
+         "email":"tetuser@test.com",
+         "password":"password12"
+         
+         }
+         """;
+        given()
+                .contentType("application/json")
+                .body(loginPayLoad)
+                .when()
+                .post("/auth/login")
+                .then()
+                .statusCode(401);
+
+
+
+
+
+
+
+    }
+
+
+
 
 
 }
